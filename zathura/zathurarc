@@ -25,6 +25,8 @@ set default-fg "#abb2bf"
 set recolor-lightcolor "#1e2127"
 set recolor-darkcolor "#abb2bf"
 
+set selection-clipboard clipboard
+
 set statusbar-h-padding 0
 set statusbar-v-padding 0
 set page-padding 1

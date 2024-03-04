@@ -1,4 +1,5 @@
 #!/usr/bin/sh
-ln -s qtile ~/.config/qtile
-ln -s nvim ~/.config/nvim
-ln -s zathura ~/.config/zathura
+cp -r awesome ~/.config/awesome
+cp -r nvim ~/.config/nvim
+cp -r zathura ~/.config/zathura
+cp -r alacritty ~/.config/alacritty

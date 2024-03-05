@@ -90,7 +90,13 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 
 -- {{{ Wibar
 -- Create a textclock widget
-mytextclock = wibox.widget.textclock()
+mytextclock = wibox.widget.textclock('  <b>%dth %b %a %H:%M</b>  ', 5)
+
+local textclock_clr = wibox.widget.background()
+textclock_clr:set_widget(mytextclock)
+textclock_clr:set_bg("#000000")
+textclock_clr:set_shape(gears.shape.rounded_rect)
+textclock_clr.forced_height = 22
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
@@ -164,23 +170,32 @@ awful.screen.connect_for_each_screen(function(s)
                            awful.button({ }, 3, function () awful.layout.inc(-1) end),
                            awful.button({ }, 4, function () awful.layout.inc( 1) end),
                            awful.button({ }, 5, function () awful.layout.inc(-1) end)))
+
     -- Create a taglist widget
     s.mytaglist = awful.widget.taglist {
         screen  = s,
         filter  = awful.widget.taglist.filter.all,
         buttons = taglist_buttons,
         style = {
-            shape = gears.shape.powerline
-        },
-        layout = {
-            spacing_widget = {
-                color  = '#dddddd',
-                shape  = gears.shape.powerline,
-                widget = wibox.widget.separator,
-            },
-        layout  = wibox.layout.fixed.horizontal
+            shape = gears.shape.circle,
         },
     }
+
+    local my_round_systray = wibox.widget {
+      {
+        wibox.widget.systray(),
+        left   = 10,
+        top    = 2,
+        bottom = 2,
+        right  = 10,
+        widget = wibox.container.margin,
+      },
+      bg         = "#000000",
+      shape      = gears.shape.rounded_rect,
+      shape_clip = true,
+      widget     = wibox.container.background,
+    }
+    
 
     -- Create a tasklist widget
     s.mytasklist = awful.widget.tasklist {
@@ -212,7 +227,8 @@ awful.screen.connect_for_each_screen(function(s)
             },
             margins = 5,
             widget  = wibox.container.margin
-        },
+        },        left = 2,
+        right = 2,
         nil,
         create_callback = function(self, c, index, objects) --luacheck: no unused args
             self:get_children_by_id('clienticon')[1].client = c
@@ -222,22 +238,32 @@ awful.screen.connect_for_each_screen(function(s)
 }
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s, height = 25, border_width = 2, opacity = 0.9 })
+    s.mywibox = awful.wibar({ position = "top", margin = 2, screen = s, height = 22, bg = beautiful.bg_normal .. "00" })
 
     -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
+
         { -- Left widgets
-            layout = wibox.layout.fixed.horizontal,
-            s.mytaglist,
-            s.mypromptbox,
-        },
-        s.mytasklist, -- Middle widget
-        { -- Right widgets
-            layout = wibox.layout.fixed.horizontal,
+            -- layout = wibox.layout.fixed.horizontal,
+            widget = wibox.container.background,
+            bg = beautiful.bg_normal,
             spacing = 5,
-            wibox.widget.systray(),
-            mytextclock,
+            shape = gears.shape.rounded_rect,
+            s.mytaglist,
+        },
+        { -- Middle widget
+          textclock_clr,
+          forced_height = 22,
+          widget = wibox.container.place,
+        },
+        { -- Right widgets
+            -- layout = wibox.layout.fixed.horizontal,
+            spacing = 5,
+            my_round_systray,
+            widget = wibox.container.background,
+            bg = beautiful.bg_normal,
+            shape = gears.shape.rounded_rect,
         },
     }
 end)

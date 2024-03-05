@@ -24,6 +24,25 @@ return {
     end,
   },
 
+  {
+    'stevearc/conform.nvim',
+    opts = {
+      formatters_by_ft = {
+    lua = { "stylua" },
+    -- Conform will run multiple formatters sequentially
+    python = { "isort", "black" },
+    -- Use a sub-list to run only the first available formatter
+    javascript = { { "prettierd", "prettier" } },
+  },
+  format_on_save = {
+    -- These options will be passed to conform.format()
+    timeout_ms = 500,
+    lsp_fallback = true,
+  },
+
+    },
+  },
+
   { "lewis6991/gitsigns.nvim", lazy = true, opts = { signs = {
 		add = { hl = "GitSignsAdd", text = "│", numhl="GitSignsAddNr", linehl="GitSignsAddLn" },
 		change = { hl = "GitSignsChange", text = "│", numhl="GitSignsChangeNr", linehl="GitSignsChangeLn" },

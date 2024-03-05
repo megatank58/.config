@@ -13,16 +13,16 @@ local theme = {}
 
 theme.font          = "sans 8"
 
-theme.bg_normal     = "#222222"
-theme.bg_focus      = "#535d6c"
+theme.bg_normal     = "#000000"
+theme.bg_focus      = "#ffffff"
 theme.bg_urgent     = "#ff0000"
 theme.bg_minimize   = "#444444"
 theme.bg_systray    = theme.bg_normal
 theme.systray_icon_spacing = 2
 
-theme.fg_normal     = "#aaaaaa"
-theme.fg_focus      = "#ffffff"
-theme.fg_urgent     = "#ffffff"
+theme.fg_normal     = "#ffffff"
+theme.fg_focus      = "#000000"
+theme.fg_urgent     = "#000000"
 theme.fg_minimize   = "#ffffff"
 
 theme.useless_gap   = dpi(0)
@@ -52,6 +52,11 @@ theme.taglist_squares_sel = theme_assets.taglist_squares_sel(
 theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
     taglist_square_size, theme.fg_normal
 )
+
+theme.taglist_bg_focus      = "#ffffff"
+theme.taglist_fg_focus      = "#000000"
+theme.taglist_fg_occupied   = "#ffffff"
+theme.taglist_fg_empty      = "#ffffff"
 
 -- Variables set for theming notifications:
 -- notification_font

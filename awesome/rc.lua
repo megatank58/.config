@@ -90,7 +90,7 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 
 -- {{{ Wibar
 -- Create a textclock widget
-mytextclock = wibox.widget.textclock('  <b>%dth %b %a %H:%M</b>  ', 5)
+mytextclock = wibox.widget.textclock(' <b>%eth %b %a %H:%M</b>  ', 5)
 
 local textclock_clr = wibox.widget.background()
 textclock_clr:set_widget(mytextclock)

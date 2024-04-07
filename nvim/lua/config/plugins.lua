@@ -43,17 +43,6 @@ return {
     },
   },
 
-  { "lewis6991/gitsigns.nvim", lazy = true, opts = { signs = {
-		add = { hl = "GitSignsAdd", text = "│", numhl="GitSignsAddNr", linehl="GitSignsAddLn" },
-		change = { hl = "GitSignsChange", text = "│", numhl="GitSignsChangeNr", linehl="GitSignsChangeLn" },
-		delete = { hl = "GitSignsDelete", text = "_", numhl="GitSignsDeleteNr", linehl="GitSignsDeleteLn" },
-		topdelete = { hl = "GitSignsDelete", text = "‾", numhl="GitSignsDeleteNr", linehl="GitSignsDeleteLn" },
-		changedelete = { hl = "GitSignsChange", text = "~", numhl="GitSignsChangeNr", linehl="GitSignsChangeLn" },
-		untracked = { hl = "GitSignsAdd", text = "│", numhl="GitSignsAddNr", linehl="GitSignsAddLn" },
-	},
-	preview_config = {
-		border = "rounded",
-	}, } },
   "lervag/vimtex",
   "sirver/ultisnips",
   "honza/vim-snippets",
@@ -182,11 +171,14 @@ return {
 			global = true,
 		},
 	}, }},
-
-  "edluffy/hologram.nvim",
   "MunifTanjim/nui.nvim",
-
-  "nvim-lua/plenary.nvim",
+  'neovim/nvim-lspconfig',
+  'hrsh7th/cmp-nvim-lsp',
+  'hrsh7th/cmp-buffer',
+  'hrsh7th/cmp-path',
+  'hrsh7th/cmp-cmdline',
+  'hrsh7th/nvim-cmp',
+  'quangnguyen30192/cmp-nvim-ultisnips',
 
   { "nvim-telescope/telescope.nvim", lazy = true, opts = { defaults = {
 		layout_config = {

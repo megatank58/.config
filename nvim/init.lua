@@ -17,5 +17,4 @@ vim.bo.softtabstop = 2
 
 vim.g.mapleader = " "
 require("lazy").setup("config/plugins")
-
-
+require("config.mappings")

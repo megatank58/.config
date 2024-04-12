@@ -20,16 +20,10 @@ snippet template "Basic template" b
 \usepackage{textcomp}
 \usepackage{times}
 \usepackage{amsmath, amssymb}
-\usepackage{import}
-\usepackage{xifthen}
-\usepackage{pdfpages}
-\usepackage{transparent}
+\usepackage{tikz}
 \usepackage[many]{tcolorbox}
-
-\newcommand{\incfig}[2][1]{%
-\def\svgwidth{#1\columnwidth}
-\import{./figures/}{#2.pdf_tex}
-}
+\usepackage{float}
+\usepackage{graphicx}
 
 \pdfsuppresswarningpagegroup=1
 
@@ -68,9 +62,9 @@ snippet table "Table environment" b
 endsnippet
 
 snippet fig "Figure environment" b
-\begin{figure}[${1:htpb}]
+\begin{figure}[${1:H}]
 	\centering
-	${2:\includegraphics[width=0.8\textwidth]{$3}}
+	${2:\incfig{$3}}
 	\caption{${4:$3}}
 	\label{fig:${5:${3/\W+/-/g}}}
 \end{figure}
@@ -96,6 +90,12 @@ endsnippet
 
 snippet pac "Package" b
 \usepackage[${1:options}]{${2:package}}$0
+endsnippet
+
+snippet tcol "Tcolorbox" b 
+\begin{tcolorbox}
+	\textbf{$0}
+\end{tcolorbox}
 endsnippet
 
 snippet => "implies" Ai
@@ -127,9 +127,9 @@ ${1:${VISUAL}}
 endsnippet
 
 snippet ali "Align" bA
-\begin{align*}
+\begin{aligned}
 	${1:${VISUAL}}
-.\end{align*}
+.\end{aligned}
 endsnippet
 
 context "math()"
@@ -298,7 +298,7 @@ snippet part "d/dx" w
 endsnippet
 
 context "math()"
-snippet sq "\sqrt{}" iA
+snippet sq "\qrt{}" iA
 \sqrt{${1:${VISUAL}}} $0
 endsnippet
 
@@ -398,7 +398,7 @@ snippet R0+ "R0+" iA
 endsnippet
 
 snippet plot "Plot" w
-\begin{figure}[$1]
+\begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
 		\begin{axis}[

@@ -20,6 +20,16 @@ snippet template "Basic template" b
 \usepackage{textcomp}
 \usepackage{times}
 \usepackage{amsmath, amssymb}
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage[many]{tcolorbox}
+
+\newcommand{\incfig}[2][1]{%
+\def\svgwidth{#1\columnwidth}
+\import{./figures/}{#2.pdf_tex}
+}
 
 \pdfsuppresswarningpagegroup=1
 
@@ -508,7 +518,7 @@ snippet set "set" wA
 endsnippet
 
 snippet || "mid" iA
- \mid
+\mid
 endsnippet
 
 
@@ -630,7 +640,6 @@ endsnippet
 snippet letw "let omega" iA
 Let $\Omega \subset \C$ be open.
 endsnippet
-
 
 snippet HH "H" iA
 \mathbb{H}

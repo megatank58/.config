@@ -64,7 +64,7 @@ modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
-    -- awful.layout.suit.floating,
+   -- awful.layout.suit.floating,
     awful.layout.suit.tile,
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
@@ -116,28 +116,6 @@ local taglist_buttons = gears.table.join(
                     awful.button({ }, 5, function(t) awful.tag.viewprev(t.screen) end)
                 )
 
-local tasklist_buttons = gears.table.join(
-                     awful.button({ }, 1, function (c)
-                                              if c == client.focus then
-                                                  c.minimized = true
-                                              else
-                                                  c:emit_signal(
-                                                      "request::activate",
-                                                      "tasklist",
-                                                      {raise = true}
-                                                  )
-                                              end
-                                          end),
-                     awful.button({ }, 3, function()
-                                              awful.menu.client_list({ theme = { width = 250 } })
-                                          end),
-                     awful.button({ }, 4, function ()
-                                              awful.client.focus.byidx(1)
-                                          end),
-                     awful.button({ }, 5, function ()
-                                              awful.client.focus.byidx(-1)
-                                          end))
-
 local function set_wallpaper(s)
     -- Wallpaper
     if beautiful.wallpaper then
@@ -181,6 +159,7 @@ awful.screen.connect_for_each_screen(function(s)
         },
     }
 
+
     local my_round_systray = wibox.widget {
       {
         wibox.widget.systray(),
@@ -195,47 +174,6 @@ awful.screen.connect_for_each_screen(function(s)
       shape_clip = true,
       widget     = wibox.container.background,
     }
-    
-
-    -- Create a tasklist widget
-    s.mytasklist = awful.widget.tasklist {
-    screen   = s,
-    filter   = awful.widget.tasklist.filter.currenttags,
-    buttons  = tasklist_buttons,
-    layout   = {
-        spacing_widget = {
-            valign = 'center',
-            halign = 'center',
-            widget = wibox.container.place,
-        },
-        spacing = 1,
-        layout  = wibox.layout.fixed.horizontal
-    },
-    -- Notice that there is *NO* wibox.wibox prefix, it is a template,
-    -- not a widget instance.
-    widget_template = {
-        {
-            wibox.widget.base.make_widget(),
-            forced_height = 0,
-            id            = 'background_role',
-            widget        = wibox.container.background,
-        },
-        {
-            {
-                id     = 'clienticon',
-                widget = awful.widget.clienticon,
-            },
-            margins = 5,
-            widget  = wibox.container.margin
-        },        left = 2,
-        right = 2,
-        nil,
-        create_callback = function(self, c, index, objects) --luacheck: no unused args
-            self:get_children_by_id('clienticon')[1].client = c
-        end,
-        layout = wibox.layout.align.vertical,
-    },
-}
 
     -- Create the wibox
     s.mywibox = awful.wibar({ position = "top", margin = 2, screen = s, height = 22, bg = beautiful.bg_normal .. "00" })
@@ -324,8 +262,8 @@ globalkeys = gears.table.join(
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launcher"}),
-    awful.key({ modkey, 	  }, "f",  function () awful.spawn("firefox") end,
-              {description = "opens firefox", group = "launcher"}),
+    awful.key({ modkey, 	  }, "f",  function () awful.spawn("thorium-browser") end,
+              {description = "opens thorium-browser", group = "launcher"}),
 
     awful.key({ modkey, "Control" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
@@ -365,7 +303,7 @@ globalkeys = gears.table.join(
     awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
               {description = "run prompt", group = "launcher"}),
 
-    awful.key({ }, "Print", function () awful.util.spawn("flameshot", false) end),
+    awful.key({ }, "Print", function () awful.util.spawn("flameshot gui", false) end),
 
     awful.key({ modkey }, "x",
               function ()

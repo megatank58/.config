@@ -6,8 +6,6 @@ pcall(require, "luarocks.loader")
 local gears = require("gears")
 local awful = require("awful")
 require("awful.autofocus")
--- Widget and layout library
-local wibox = require("wibox")
 -- Theme handling library
 local beautiful = require("beautiful")
 -- Notification library
@@ -88,16 +86,6 @@ menubar.utils.terminal = terminal -- Set the terminal for applications that requ
 -- }}}
 
 
--- {{{ Wibar
--- Create a textclock widget
-mytextclock = wibox.widget.textclock(' <b>%eth %b %a %H:%M</b>  ', 5)
-
-local textclock_clr = wibox.widget.background()
-textclock_clr:set_widget(mytextclock)
-textclock_clr:set_bg("#000000")
-textclock_clr:set_shape(gears.shape.rounded_rect)
-textclock_clr.forced_height = 22
-
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
                     awful.button({ }, 1, function(t) t:view_only() end),
@@ -158,52 +146,6 @@ awful.screen.connect_for_each_screen(function(s)
             shape = gears.shape.circle,
         },
     }
-
-
-    local my_round_systray = wibox.widget {
-      {
-        wibox.widget.systray(),
-        left   = 10,
-        top    = 2,
-        bottom = 2,
-        right  = 10,
-        widget = wibox.container.margin,
-      },
-      bg         = "#000000",
-      shape      = gears.shape.rounded_rect,
-      shape_clip = true,
-      widget     = wibox.container.background,
-    }
-
-    -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", margin = 2, screen = s, height = 22, bg = beautiful.bg_normal .. "00" })
-
-    -- Add widgets to the wibox
-    s.mywibox:setup {
-        layout = wibox.layout.align.horizontal,
-
-        { -- Left widgets
-            -- layout = wibox.layout.fixed.horizontal,
-            widget = wibox.container.background,
-            bg = beautiful.bg_normal,
-            spacing = 5,
-            shape = gears.shape.rounded_rect,
-            s.mytaglist,
-        },
-        { -- Middle widget
-          textclock_clr,
-          forced_height = 22,
-          widget = wibox.container.place,
-        },
-        { -- Right widgets
-            -- layout = wibox.layout.fixed.horizontal,
-            spacing = 5,
-            my_round_systray,
-            widget = wibox.container.background,
-            bg = beautiful.bg_normal,
-            shape = gears.shape.rounded_rect,
-        },
-    }
 end)
 -- }}}
 
@@ -262,7 +204,7 @@ globalkeys = gears.table.join(
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launcher"}),
-    awful.key({ modkey, 	  }, "z",  function () awful.spawn("zen-browser") end,
+    awful.key({ modkey, 	  }, "z",  function () awful.spawn("flatpak run io.github.zen_browser.zen") end,
               {description = "opens zen-browser", group = "launcher"}),
     awful.key({ modkey, 	  }, "f",  function () awful.spawn("firefox") end,
               {description = "opens firefox", group = "launcher"}),

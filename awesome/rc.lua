@@ -5,6 +5,7 @@ pcall(require, "luarocks.loader")
 -- Standard awesome library
 local gears = require("gears")
 local awful = require("awful")
+local wibox = require("wibox")
 require("awful.autofocus")
 -- Theme handling library
 local beautiful = require("beautiful")
@@ -136,8 +137,6 @@ awful.screen.connect_for_each_screen(function(s)
                            awful.button({ }, 3, function () awful.layout.inc(-1) end),
                            awful.button({ }, 4, function () awful.layout.inc( 1) end),
                            awful.button({ }, 5, function () awful.layout.inc(-1) end)))
-
-    -- Create a taglist widget
     s.mytaglist = awful.widget.taglist {
         screen  = s,
         filter  = awful.widget.taglist.filter.all,
@@ -146,6 +145,34 @@ awful.screen.connect_for_each_screen(function(s)
             shape = gears.shape.circle,
         },
     }
+
+    my_clock = wibox.widget {
+      widget = wibox.widget.textclock,
+      format = "%H:%M",
+      align = "center",
+      valign = "center",
+      font = "comic neue 48"
+    }
+
+    my_clock_wibox = wibox({
+    visible = true,
+    ontop = false,  
+    type = "desktop",  
+    width = 200,  
+    height = 50,
+    border_width = 10,
+    opacity = 0.75,  
+    bg = "#00000000" 
+})
+
+my_clock_wibox:setup {
+    layout = wibox.layout.stack,
+    my_clock
+}
+
+my_clock_wibox.x = 950
+my_clock_wibox.y = 125
+
 end)
 -- }}}
 

@@ -160,7 +160,6 @@ awful.screen.connect_for_each_screen(function(s)
     type = "desktop",  
     width = 200,  
     height = 50,
-    border_width = 10,
     opacity = 0.75,  
     bg = "#00000000" 
 })

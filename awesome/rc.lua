@@ -151,7 +151,7 @@ awful.screen.connect_for_each_screen(function(s)
       format = "%H:%M",
       align = "center",
       valign = "center",
-      font = "comic neue 48"
+      font = "comic relief 44"
     }
 
     my_clock_wibox = wibox({
@@ -159,7 +159,7 @@ awful.screen.connect_for_each_screen(function(s)
     ontop = false,  
     type = "desktop",  
     width = 200,  
-    height = 50,
+    height = 75,
     opacity = 0.75,  
     bg = "#00000000" 
 })
@@ -230,10 +230,10 @@ globalkeys = gears.table.join(
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launcher"}),
-    awful.key({ modkey, 	  }, "z",  function () awful.spawn("flatpak run io.github.zen_browser.zen") end,
+    awful.key({ modkey, 	  }, "z",  function () awful.spawn("zen") end,
               {description = "opens zen-browser", group = "launcher"}),
-    awful.key({ modkey, 	  }, "f",  function () awful.spawn("firefox") end,
-              {description = "opens firefox", group = "launcher"}),
+    awful.key({ modkey, 	  }, "c",  function () awful.spawn("codium") end,
+              {description = "opens codium", group = "launcher"}),
     awful.key({ modkey, 	  }, "d",  function () awful.spawn("discord") end,
               {description = "opens discord", group = "launcher"}),
 
@@ -338,18 +338,24 @@ clientkeys = gears.table.join(
         {description = "(un)maximize horizontally", group = "client"}),
          -- Volume Keys
         awful.key({}, "XF86AudioLowerVolume", function ()
-        awful.util.spawn("amixer -q -D pulse sset Master 5%-", false) end),
+        awful.util.spawn("amixer -q -D amixer sset Master 5%-", false) end),
         awful.key({}, "XF86AudioRaiseVolume", function ()
-        awful.util.spawn("amixer -q -D pulse sset Master 5%+", false) end),
+        awful.util.spawn("amixer -q -D amixer sset Master 5%+", false) end),
         awful.key({}, "XF86AudioMute", function ()
-     awful.util.spawn("amixer -D pulse set Master 1+ toggle", false) end),
+     awful.util.spawn("amixer -D amixer sset Master 1+ toggle", false) end),
    -- Media Keys
    awful.key({}, "XF86AudioPlay", function()
      awful.util.spawn("playerctl play-pause", false) end),
    awful.key({}, "XF86AudioNext", function()
      awful.util.spawn("playerctl next", false) end),
    awful.key({}, "XF86AudioPrev", function()
-     awful.util.spawn("playerctl previous", false) end)
+     awful.util.spawn("playerctl previous", false) end),
+
+    awful.key({ modkey }, "=", function()
+        awful.util.spawn("picom-trans -c +10", false) end),
+  
+    awful.key({ modkey }, "-", function()
+        awful.util.spawn("picom-trans -c -10", false) end)
 )
 
 -- Bind all key numbers to tags.

@@ -15,5 +15,7 @@ picom --config ~/.config/picom/picom.conf &
 feh --bg-scale ~/Wallpapers/wallpaper.jpg &
 cbatticon --icon-type symbolic
 
+amixer sset Master 100%
+
 # sleep 1
 # volumeicon &

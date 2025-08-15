@@ -1,0 +1,782 @@
+..
+exit
+ls
+calcagebra
+z 
+echo $PATH
+echo $env.PATH
+zsh
+cd .config
+;s
+ls
+cd nu
+cd nushell
+ls
+hx env.nu
+echo $env.PATH
+exit
+zsh
+helix
+hx ~/.zshrc
+helix ~/.zshrc
+helix ~/.calcagebra/env
+config nu
+helix config.nu
+z c
+helix ~/.z
+helix ~/.zshrc
+config nu
+exit
+config nu
+zoxide init nushell | save -f ~/.zoxide.nu
+config nu
+exit
+z c
+z
+exit
+mkdir projects
+mv Templates/* projects
+sync
+mv Templates/.* projects
+ls Templates
+ls Templates -a
+rm -rf Templates
+cd projects
+ls
+gh repo create
+cd typit
+ls
+ls -a
+cargo new typit .
+cargo new typit
+mv typit/* .
+ls
+ls -a
+ls typit 0a
+ls typit -a
+rm -rf typit
+alias
+config nu
+source nu
+hx
+z c
+z t
+sudo pacman -S typst
+git clone https://github.com/ad-nauseam/bloggies
+ls bloggies
+mv bloggies/rustfmt.toml .
+mv bloggies/src .
+rm -rf src
+mv bloggies/src .
+mv bloggies/Cargo.toml .
+hx
+rm -rf bloggies
+ls
+hx
+rm -rf src/commands/
+ls
+help ls
+ls -l -d
+ls -d
+ls src
+rm -rf src/{bin, command.rs}
+ls
+ls src
+rm -rf src/bin/ src/commands.rs
+z t
+cargo run
+touch .env
+touch .env_example
+hx
+ls
+ls -a
+hx .env_example
+hx .env
+git status
+hx .gitignore
+git status
+git add .
+clear
+cargo run
+cargo run 
+cargo run!
+cargo run
+cargo run 
+help typst
+typst --help
+typst compile --help
+typst compile - - --format png
+ls
+ls -a
+typst compile - - --format png
+typst help compile
+cargo run 
+cargo watch
+cargo watch -x run
+cargo run
+cargo run 
+cargo run  
+cargo run
+cargo run 
+hx
+git reset HEAD^
+git reset HEAD
+git add .
+git status
+ripgrep
+z t
+git status
+git add .
+vimgrep
+ls **/* | get name.0| cat $in | find bloggies
+ls **/* | get name.0| cat $in | find Bloggies
+git commit -m "chore: init"
+git push
+clear && cargo run
+clear and cargo run
+clear; cargo run
+git pull
+clear; cargo run
+hx Cargo.toml
+clear; cargo run
+z t
+ls
+z t
+cargo run
+hx
+config helix
+config
+hx ~/.config/helix
+cargo run
+hx
+cargo run
+hx
+cargo run
+hx
+cargo run
+hx
+cargo run
+hx
+cargo run
+hx
+cargo run
+hx
+cargo run
+jhx
+hx
+ls
+git add .
+git commit -m "feat: add delete button and change `$ expr $` usage to `$expr$`"
+hx
+git add .
+git commit -m "chore: docs"
+git push
+cargo run
+git status
+ls /usr/share/applications/org.pwmt.zathura.desktop
+xdg-mime default org.pwmt.zathura.desktop application/pdf
+sudo pacman -Syu
+sudo pacman -R haskell obs-studio
+ghci
+ghcup
+ghcup nule
+ghcup nuke
+sudo pacma -R ghcup obs-studio
+sudo pacman -R ghcup obs-studio
+rm -rf /usr/bin/ghcup
+sudo rm -rf /usr/bin/ghcup
+sudo pacman -R obs-studio
+sudo pacman -Syu
+sudo pacman -Q haskell
+sudo pacman -Q haskell*
+sudo pacman -R haskell-language-server
+which ghc
+sudo pacman -R haskell-aeson-2.1.2.1-108  haskell-ansi-terminal-1.0.2-20  haskell-ansi-terminal-types-0.11.5-60  haskell-ansi-wl-pprint-0.6.9-479<\n>               haskell-asn1-encoding-0.9.6-262  haskell-asn1-parse-0.9.5-262  haskell-asn1-types-0.3.4-241  haskell-assoc-1.1.1-30<\n>               haskell-async-2.2.5-111  haskell-attoparsec-0.14.4-107  haskell-attoparsec-aeson-2.1.0.0-92  haskell-attoparsec-iso8601-1.1.0.0-83<\n>               haskell-auto-update-0.1.6-379  haskell-base-compat-batteries-0.12.3-12  haskell-base-orphans-0.9.1-12<\n>               haskell-base16-bytestring-1.0.2.0-112  haskell-base64-bytestring-1.2.1.0-136  haskell-bifunctors-5.6-191  haskell-bitvec-1.1.3.0-155<\n>               haskell-blaze-html-0.9.2.0-32  haskell-blaze-markup-0.8.3.0-42  haskell-cabal-install-solver-3.8.1.0-17  haskell-casa-client-0.0.2-32<\n>               haskell-casa-types-0.0.2-522  haskell-case-insensitive-1.2.1.0-235  haskell-clock-0.8.4-61  haskell-colour-2.3.6-270<\n>               haskell-comonad-5.0.9-48  haskell-conduit-1.3.6.1-48  haskell-conduit-extra-1.3.7-2  haskell-constraints-0.13.4-83<\n>               haskell-cryptohash-sha256-0.11.102.1-123  haskell-crypton-1.0.0-7  haskell-crypton-conduit-0.2.3-127<\n>               haskell-crypton-connection-0.4.1-12  haskell-crypton-x509-1.7.6-61  haskell-crypton-x509-store-1.6.10-2<\n>               haskell-crypton-x509-system-1.6.7-62  haskell-crypton-x509-validation-1.6.13-16  haskell-cryptonite-0.30-105<\n>               haskell-data-default-0.7.1.1-350  haskell-data-default-instances-dlist-0.0.1.2-31  haskell-data-fix-0.3.4-2<\n>               haskell-distributive-0.6.2.1-243  haskell-dlist-1.0-281  haskell-easy-file-0.2.5-53  haskell-edit-distance-0.2.2.1-240<\n>               haskell-enclosed-exceptions-1.0.3-285  haskell-extra-1.7.16-52  haskell-fast-logger-3.2.2-5  haskell-filelock-0.1.1.7-44<\n>               haskell-foldable1-classes-compat-0.1-191  haskell-fsnotify0.3-0.3.0.1-131  haskell-generic-deriving-1.14.6-2<\n>               haskell-generically-0.1.1-19  haskell-githash-0.1.6.3-228  haskell-glob-0.10.2-122  haskell-hackage-security-0.6.2.6-59<\n>               haskell-hashable-1.4.4.0-96  haskell-hi-file-parser-0.1.7.0-32  haskell-hinotify-0.4.2-14  haskell-hourglass-0.2.12-278<\n>               haskell-hpack-0.35.2-214  haskell-http-4000.4.1-287  haskell-http-api-data-0.5.1-111  haskell-http-client-0.7.18-14<\n>               haskell-http-client-tls-0.3.6.4-35  haskell-http-conduit-2.3.9.1-76  haskell-http-download-0.2.1.0-198  haskell-http-types-0.12.4-63<\n>               haskell-indexed-traversable-0.1.4-104  haskell-indexed-traversable-instances-0.1.2-52  haskell-infer-license-0.2.0-281<\n>               haskell-integer-logarithms-1.0.4-8  haskell-iproute-1.7.15-15  haskell-libyaml-0.1.4-76  haskell-lift-type-0.1.2.0-31<\n>               haskell-lifted-async-0.10.2.7-43  haskell-lifted-base-0.2.3.12-299  haskell-lukko-0.1.1.3-233  haskell-megaparsec-9.6.1-32<\n>               haskell-memory-0.18.0-40  haskell-monad-control-1.0.3.1-134  haskell-monad-logger-0.3.42-19  haskell-mono-traversable-1.0.21.0-49<\n>               haskell-mustache-2.4.2-210  haskell-neat-interpolation-0.5.1.4-114  haskell-network-3.1.4.0-52  haskell-network-uri-2.6.4.2-64<\n>               haskell-onetuple-0.4.2-46  haskell-optparse-applicative-0.17.1.0-96  haskell-optparse-simple-0.1.1.4-418  haskell-os-string-2.0.7-38<\n>               haskell-pantry-0.5.7-379  haskell-path-0.9.5-79  haskell-path-io-1.8.2-54  haskell-pem-0.2.4-318  haskell-persistent-2.14.5.1-102<\n>               haskell-persistent-sqlite-2.13.1.0-235  haskell-primitive-0.8.0.0-25  haskell-project-template-0.2.1.0-420<\n>               haskell-quickcheck-2.14.3-154  haskell-random-1.2.1.2-95  haskell-resolv-0.2.0.2-233  haskell-resource-pool-0.2.3.2-329<\n>               haskell-resourcet-1.2.6-83  haskell-retry-0.9.3.1-78  haskell-rio-0.1.22.0-157  haskell-rio-orphans-0.1.2.0-389<\n>               haskell-rio-prettyprint-0.1.7.0-41  haskell-safe-0.3.21-37  haskell-safe-exceptions-0.1.7.4-53  haskell-scientific-0.3.7.0-146<\n>               haskell-semialign-1.3-41  haskell-semigroupoids-6.0.1-24  haskell-shelly-1.11.0-2  haskell-socks-0.6.1-269  haskell-split-0.2.5-38<\n>               haskell-splitmix-0.1.0.5-85  haskell-streaming-commons-0.2.3.0-14  haskell-strict-0.5-76  haskell-syb-0.7.2.4-55<\n>               haskell-tar-0.5.1.1-204  haskell-tar-conduit-0.4.1-102  haskell-tasty-1.4.3-138  haskell-temporary-1.3-689<\n>               haskell-text-metrics-0.3.2-114  haskell-text-short-0.1.6-31  haskell-th-compat-0.1.6-14  haskell-th-expand-syns-0.4.12.0-8<\n>               haskell-th-lift-instances-0.1.20-81  haskell-th-reify-many-0.1.10-140  haskell-these-1.2.1-14  haskell-time-compat-1.9.6.1-129<\n>               haskell-tls-1.9.0-28  haskell-transformers-base-0.4.6-134  haskell-typed-process-0.2.13.0-2  haskell-unicode-data-0.5.0-10<\n>               haskell-unicode-transforms-0.4.0.1-107  haskell-unix-compat-0.7.3-36  haskell-unix-time-0.4.16-14  haskell-unliftio-0.2.25.1-20<\n>               haskell-unordered-containers-0.2.20-60  haskell-uuid-types-1.0.6-20  haskell-vault-0.3.1.5-227  haskell-vector-0.13.2.0-17<\n>               haskell-vector-algorithms-0.9.1.0-37  haskell-witherable-0.4.2-159  haskell-yaml-0.11.11.2-120  haskell-zip-archive-0.4.3.2-34<\n>               haskell-zlib-0.6.3.0-92
+pacman -Q | grep haskell
+pactree -r haskell-zlib 0.6.3.0-91
+sudo pacman -S pacman-contrib
+pactree -r haskell-zlib 0.6.3.0-91
+pactree -r haskell-zlib
+pactree -r stack
+pactree -r cabal
+pacman -Q | grep ghc
+pacman -R ghc-libs ghcup-hs-bin ghcup-hs-bin-debug
+sudo pacman -R ghc-libs ghcup-hs-bin ghcup-hs-bin-debug
+sudo pacman -Rs ghc-libs ghcup-hs-bin ghcup-hs-bin-debug
+sudo pacman -Rsc ghc-libs ghcup-hs-bin ghcup-hs-bin-debug
+helix --version
+pactree -r esbuild
+sudo pacman -Syu
+z t
+z
+z projects/typit/
+cat .env
+ls
+mold --version
+cat .cargo/config.toml
+cargo build --release
+ping google.com
+htop
+xdg-mime default org.pwmt.zathura.desktop application/pdf
+xdg-open 
+z D
+xdg-open Mathematics.pdf
+sudo pacman -Q zathura
+sudo pacman -S zathura
+pactree -r zathura
+sudo pacman -S zathura-cb zathura-djvu zathura-pdf-mupdf zathura-pdf-poppler zathura-ps
+sudo pacman -S zathura-cb zathura-djvu zathura-pdf-mupdf zathura-ps
+xdg-open Mathematics.pdf
+gio
+gio mime
+gio mime application/pdf org.pwmt.zathura.desktop
+htop
+gio mime application/pdf
+reboot
+gio mime application/pdf
+htop
+sudo pacman -Rns plasma-meta kde-applications-meta
+sudo pacman -S plasma-meta kde-applications-meta
+sudo pacman -Rns plasma-meta kde-applications-meta
+reboot
+gio mime application/pdf
+gio mime application/pdf org.pwmt.zathura-pdf-mupdf.desktop
+htop
+gio mime
+gio mime application/pdf
+gio
+gio open ~/Desktop/Mathematics.pdf
+xkill
+sudo pacman -S gnome-keyring
+sudo pacman -S archlinux-keyring
+sudo pacman -S gnome-keyring
+reboot
+sudo pacman -S --needed qt5ct
+sudoedit /etc/environment.d/100qt5ct-dark-theme.conf
+mkdir /etc/environment.d
+sudo mkdir /etc/environment.d
+sudoedit /etc/environment.d/100qt5ct-dark-theme.conf
+ls /etc/environment
+qt5ct
+open ~/.config/qt5ct/
+open ~/.config/qt5ct/qt5ct.conf
+open /etc/environment
+pam_env
+cat /etc/environment.d/100qt5ct-dark-theme.conf
+sudoedit /etc/environment
+qt5ct 
+reboot
+zathura Desktop/Mathematics.pdf
+htop
+z t
+zt
+z t
+helix
+..
+ls
+git clone https://github.com/megatank58/bloggies
+git clone https://github.com/megatank58/ad-vertisement
+cd ad
+cd ad*
+cd ad-vertisement/
+hx
+git add .
+git commit -m "fix: intents needed after removing message event removed"
+git push
+hx
+z typit
+hx
+z ad
+z t
+..
+ls
+z ad-
+ls
+hx
+git pull
+history | grep upstream
+git pull upstream main
+git pull origin main
+git pull upstream main
+git pull --help
+git remote add upstream https://github.com/ad-nauseum/bloggies
+git pull upstream main
+git remote add upstream https://github.com/ad-nauseam/bloggies
+git remote remove upstream
+git remote add upstream https://github.com/ad-nauseam/bloggies
+git pull upstream main
+git fetch --all
+git reset --hard upstream/main
+git push --force
+z t
+cargo run
+hx
+git add .
+tatus
+git status
+git commit -m "fix: check button id before delete"
+git push
+ls
+scrcpy
+adb devices
+adb tcpip 5555
+adb shell ip route | awk '{print $9}'
+adb connect 192.168.47.231:5555
+scrcpy
+calcagebra 
+htop
+z t
+..
+touch test.cal
+hx test.cal
+calcagebra test.cal --time
+calcagebra run test.cal --time
+hx test.cal
+calcagebra run test.cal --time
+hx test.cal
+calcagebra run test.cal --time
+zathura Physics.pdf
+sudo pacman -S discord
+sudo pacman -Sy discord
+discord
+z pr
+git clone https://github.com/TogarashiPepper/abacas/
+z t
+cargo run
+git pull
+cargo run
+z t
+cargo run
+hx
+cargo run
+hx
+cargo run
+git add .
+git commit -m "fix: button deletion"
+git push
+..
+z al
+ls
+z ab
+z abacas
+hx\
+hx
+git pull
+git add .
+git stash
+git pull
+z a
+cargo run
+discord
+sudo pacman -Syu
+discord
+hx
+cargo add anyhow
+hx
+z a
+hx
+exit
+ls Books
+sudo lsblk
+mount /dev/sdb1
+mkdir /run/usb
+sudo Qm
+sudo mkdir /run/usb
+mount /dev/sdb1 /run/usb
+sudo m!
+sudo mou!
+sudo mount /dev/sdb1 /run/usb
+ls /run/usb
+ls /run/usb/JEE
+ls /run/usb/books
+cp -r /run/sub/books ~/Desktop
+cp -r /run/usb/books ~/Desktop
+sync
+flatpak
+flatpak --help
+sudo pacman -R discord
+flatpak install discord
+echo $env.XDG_RUNTIME_DIR
+ls /run/user/1000/discord-ipc-0
+ls /run/user/1000/
+discord
+flatpak run discord
+flatpak run com.discordapp.Discord
+ls /run/user/1000/
+ls /run/user/1000/app
+flatpak remove com.discordapp.Discord
+z ad
+hx
+git pull
+hx
+cargo run --bin deploy
+ls
+zsh
+hx
+ls
+ls -a
+z t
+cargo run --bin deploy
+nmcli
+nmcli device wifi connect megatank58
+z t
+cargo run --bin deploy
+z t
+cargo run
+hx
+git add .
+git commit -m "feat(Blogs): webhook command"
+git push
+git reset HEAD^
+hx
+cargo clippy
+cargo clippy --fix --allow-dirty
+git add .
+git commit -m "feat(Blogs): webhook command"
+git push
+git push --force
+git status
+git add ,
+git add .
+git commit -m "feat(blogs): check if webhook exists"
+git push
+hx
+git status
+git add .
+git stash
+git pull
+git reset --hard upstream/main
+git fetch --all
+git reset --hard upstream/main
+git stash apply
+git add .
+git checkout -b chore/cleanup
+git commit -m "chore: cleanup"
+git push
+git push --set-upstream origin chore/cleanup
+pnpm --version
+z t
+hx
+git add .
+git checkout -b fix/blog/correct-channel-webhook
+git commit -m "fix: make webhook for correct channel"
+git push --set-upstream origin fix/blog/correct-channel-webhook
+git checkout main
+git fetch --all
+git reset
+git status
+git checkout fix/blog/correct-channel-webhook
+git pull origin main
+git pull upstream main
+git reset HEAD^
+git stash
+git pull upstream main
+git reset --hard upstream/main
+git stash apply
+git add .
+git commit -m "fix: make webhook for correct channel"
+git push --force
+hx
+cargo clippy --fix --allow-dirty
+git add .
+git commit -m "fix: replace instances of `interaction.channel` with `channel`"
+git push
+hx
+git add .
+z ad
+git status
+git add .
+git stash
+git pull 
+git fetch --all
+git pull
+git stash apply
+git checkout main
+git stash
+git checkout main
+git pull
+git stash apply
+git stash
+hx
+git reset --hard upstream/main
+git status
+hx
+ls
+git status
+hx
+git status
+cargo clippy --fix --allow-dirty
+cargo run
+hx
+cargo run
+git status
+git add .
+git commit -m "feat(blog/delete): add confirmation window"
+git push
+flatpak install org.pwmt.zathura
+flatpak install zathura
+cat /usr/share/applications/org.pwmt.zathura.desktop
+neofetch
+cosmic --version
+startcosmic --version
+start-cosmic --version
+sudo pacman -S gnome-keyring libsecret seashore
+sudo pacman -S gnome-keyring libsecret seahorse
+cosmic-store
+cosmic-store --verbose
+cosmic-store --help
+cosmic-store -- --help
+systemctl status packagekit
+packagekit 
+pkcon
+sudo pacman -S packagekit
+reboot
+zathura Desktop/books/Chemistry/N.Awasthi.pdf
+calcagebra repl
+z t
+z typit
+hx
+git add .
+git commit -m "fix: mentions being parsed as <@id>"
+git push
+z t
+cargo run
+hx
+cargo run
+z t
+cargo run
+hx
+hx
+git add .
+git commit -m "fix: mentions being parsed as <#id>"
+yay -S anki
+yay -S anki-bin
+sudo pacman -Sy
+yay -S anki-bin
+anki
+ankiweb
+anki
+sudo pacman -S tectonic
+which latex
+which tectonic
+anki
+hx
+z t
+hx
+cargo run
+hx
+htop
+cargo run
+hx
+cargo run
+hx
+cargo run
+hx
+cargo run
+hx
+cargo run
+z ad
+git pull
+git fetch --all
+git reset --hard upstream/main
+git branch
+cargo run
+hx
+git add .
+git commit -m "fix: security vulnerability to do with modals not filtering"
+git push
+git pull
+git push
+z t
+z typit
+z t
+hx
+cargo run
+git add .
+git commit -m "fix: add timeout of 3s"
+git push
+z typ
+cargo run
+z ad
+z t
+cargo run
+z ad
+hx
+git add .
+git commit -m "fix: better ui for cancelling modal deletion"
+git push
+hx
+:q:q
+git add .
+git commit -m "chore: remove unused import"
+git push
+hx
+git stash
+cargo run
+z typ
+hx
+z ad
+hx
+cargo run
+git add . 
+git commit -m "fix: use interaction.id"
+git push
+hx
+cargo run
+git add .
+git commit -m "fix: use custom_ids method"
+git push
+cargo run
+z typ
+cat .env
+c ad
+z ad
+hx .env
+cargo run --bin deploy
+hx .env
+git push
+yay -S ghcup-hs-bin
+config nu
+ghcup
+ghcup tui
+ghci
+echo $env.PATH
+ls ~/.
+ls ~/ -a
+ls ~/.ghcup/bin
+config nu
+yay -S insync
+sudo pacman -S rclone
+rclone
+rclone gui
+yay -S rclone-browser
+rclone-browser
+sudo pacman -R rclone rclone-browser
+yay -S drivesync
+ls /home/megatank58/.local/share/gem/ruby/3.4.0/bin
+config nu
+source nu
+yay -S drivesync
+sudo pacman -S ruby
+gems
+rubygems
+sudo pacman -S rubygems
+gems
+which rubygems
+yay -S drivesync
+gem
+gem uninstall bundler --version '<2' 
+gem install bundler
+yay -S drivesync
+gem uninstall bundler
+sudo pacman -R ruby rubygems
+curl -L get.rvm.io > .rvm-install
+curl -L get.rvm.io |write rvm-install
+ls
+curl -L get.rvm.io -O .rvm-install
+ls
+mv cur
+mv curl_response .rvm-install
+cat .rvm-install
+bash .rvm-install
+source /home/megatank58/.rvm/scripts/rvm
+rvm
+sudo lsblk 
+mount /dev/sdb1 /run/usb
+sudo mount /dev/sdb1 /run/usb
+mkdir /run/usb
+sudo mkdir /run/usb
+sudo mount /dev/sdb1 /run/usb
+cp -r Desktop/books/Chemistry/N.Awasthi.pdf /run/usb/books/Chemistry/
+sudo cp -r Desktop/books/Chemistry/N.Awasthi.pdf /run/usb/books/Chemistry/
+sudo cp -r `Desktop/books/Chemistry/V.K. Jaiswal - Problems in Inorganic Chemistry.pdf` /run/usb/books/Chemistry/
+sync
+sudo mount /dev/sdb1 /run/usb
+sudo lsblk 
+sudo mount /dev/sdc1 /run/usb
+rm -rf Desktop/books
+cp -r /run/usb/books ~/Desktop
+sync
+zathura `Desktop/books/cs/Lipovača, Miran - Learn you a Haskell for great good!_ a beginner's guide (2011_2012, No Starch Press) - libgen.li.pdf` &
+zathura `Desktop/books/cs/Lipovača, Miran - Learn you a Haskell for great good!_ a beginner's guide (2011_2012, No Starch Press) - libgen.li.pdf`
+sudo pacman -S fbida
+fbida
+fbgs
+fbpdf
+fbpdf `Desktop/books/cs/Lipovača, Miran - Learn you a Haskell for great good!_ a beginner's guide (2011_2012, No Starch Press) - libgen.li.pdf` 
+clear
+fbpdf `Desktop/books/cs/Lipovača, Miran - Learn you a Haskell for great good!_ a beginner's guide (2011_2012, No Starch Press) - libgen.li.pdf`
+open /dev/sb0
+/dev/fb0
+sudo chmod 666 /dev/fb0
+fbpdf `Desktop/books/cs/Lipovača, Miran - Learn you a Haskell for great good!_ a beginner's guide (2011_2012, No Starch Press) - libgen.li.pdf`
+sudo pacman -R fbida
+yay -S jfbview
+cmake --version
+yay -S apvlv
+apvlv
+apvlv --help
+apvlv `Desktop/books/cs/Lipovača, Miran - Learn you a Haskell for great good!_ a beginner's guide (2011_2012, No Starch Press) - libgen.li.pdf`
+sudo pacman -R apvlv
+sudo pacman -S poppler
+pdf2text
+poppler
+pdftotext
+pdftotext `Desktop/books/cs/Lipovača, Miran - Learn you a Haskell for great good!_ a beginner's guide (2011_2012, No Starch Press) - libgen.li.pdf`
+ls
+hx `Desktop/books/cs/Lipovača, Miran - Learn you a Haskell for great good!_ a beginner's guide (2011_2012, No Starch Press) - libgen.li.txt`
+rm -rf `Desktop/books/cs/Lipovača, Miran - Learn you a Haskell for great good!_ a beginner's guide (2011_2012, No Starch Press) - libgen.li.txt`
+yay -S fbpdf-git
+fbpdf
+fbpdf-mupdf `Desktop/books/cs/Lipovača, Miran - Learn you a Haskell for great good!_ a beginner's guide (2011_2012, No Starch Press) - libgen.li.pdf`
+sudo pacman -R fbpdf
+yay -R fbpdf
+zathura --help
+zathura --fork --mode=fullscreen 
+cat ~/.config/zathura/zathurarc
+ghci
+sudo pacman -R insync
+zathura
+zathura `Desktop/books/cs/Lipovača, Miran - Learn you a Haskell for great good!_ a beginner's guide (2011_2012, No Starch Press) - libgen.li.pdf`
+ghci
+htop
+ghci
+htop
+ghci
+htop
+z pro
+mkdir haskell-playground
+cd haskell-playground
+hx
+touch test.hs
+hx test.hs
+ghc test.hs
+which ghci
+config nu
+z hs
+z h
+ghc test.hs
+hx test.hs
+z h
+ghc test.hs
+config nu
+ghc test.hs
+ls
+./test
+ghc test.hs and ./test
+ghc test.hs 
+./test
+ghc test.hs 
+./test
+ghci
+hto
+cd projects/
+cd .config
+cd config
+ls
+rm -rf kitty
+rm -rf nvim
+awesome
+rm -rf awesome
+cp -r ~/.config/helix/ .
+ls

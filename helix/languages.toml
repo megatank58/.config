@@ -1,0 +1,2 @@
+[language-server.rust-analyzer]
+environment = { "RUSTONIG_DYNAMIC_LIBONIG" = "1" }

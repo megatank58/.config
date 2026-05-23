@@ -18,6 +18,9 @@
 # them for future reference.
 alias ghci = ghci-9.6.7
 alias ghc = ghc-9.6.7
-$env.PATH ++= ['~/.calcagebra/bin', '~/.ghcup/bin', '~/.cabal/bin', '~/.local/share/gem/ruby/3.4.0/bin']
+$env.PATH ++= ['~/.calcagebra/bin', '~/.ghcup/bin', '~/.cabal/bin', '~/.local/share/gem/ruby/3.4.0/bin', '~/.local/bin']
 $env.EDITOR = 'hx'
+$env.QTSCRCPY_KEYMAP_PATH = '/home/megatank58'
 source ~/.zoxide.nu
+source ./theme.nu
+$env.config.show_banner = false

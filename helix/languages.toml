@@ -1,0 +1,4 @@
+[[language]]
+name = "ruby"
+formatter = { command = "rubocop", args = ["--stdin", "dummy.rb", "-a", "--stderr", "--fail-level", "fatal"] }
+auto-format = true

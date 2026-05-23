@@ -1,4 +1,4 @@
-theme = "catppuccin_latte"
+theme = "catppuccin_frappe"
 
 [editor]
 mouse = false
@@ -7,3 +7,4 @@ line-number = "relative"
 [editor.inline-diagnostics]
 cursor-line = "hint"
 other-lines = "error"
+

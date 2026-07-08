@@ -418,6 +418,11 @@
         }
       '';
     };
+    ".config/jj/allowed-signatures" = {
+      text = ''
+          51410502+megatank58@users.noreply.github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILCjnnPX9qJtdlMIL6olkBDDbYSQWmzKqiYeAZHHqETA
+        '';
+    };
   };
 
   home.sessionVariables = {
@@ -465,6 +470,7 @@
         backend = "ssh";
         key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILCjnnPX9qJtdlMIL6olkBDDbYSQWmzKqiYeAZHHqETA";
         backends.ssh.program = "${lib.getExe' pkgs._1password-gui "op-ssh-sign"}";
+        backends.ssh.allowed-signers = "/home/megatank58/.config/jj/allowed-signatures";
       };
       git = {
         sign-on-push = true;

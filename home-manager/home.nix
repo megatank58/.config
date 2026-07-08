@@ -460,6 +460,26 @@
   programs.jujutsu = {
     enable = true;
     settings = {
+      signing = {
+        behaviour = "drop";
+        backend = "ssh";
+        key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILCjnnPX9qJtdlMIL6olkBDDbYSQWmzKqiYeAZHHqETA";
+        backends.ssh.program = "${lib.getExe' pkgs._1password-gui "op-ssh-sign"}";
+      };
+      git = {
+        sign-on-push = true;
+      };
+      ui = {
+        show-cryptographic-signatures = true;
+      };
+      template-aliases = {
+        "format_short_cryptographic_signature(sig)" = ''
+          if(sig,
+            sig.status(),
+            "(no sig)",
+          )
+        '';
+      };
       user = {
         name = "megatank58";
         email = "51410502+megatank58@users.noreply.github.com";
